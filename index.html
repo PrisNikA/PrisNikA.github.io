@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="CSS/style.css" rel="stylesheet">
+  <title>Расписание</title>
+</head>
+
+<body class="min-h-screen flex flex-col">
+  <header class="bg-gray-800 text-white py-4 px-6">
+    <h1 class="text-2xl font-bold">Расписание МБОУ СОШ №11</h1>
+  </header>
+
+  <nav class="bg-gray-200 py-4 px-6">
+    <div class="flex justify-between">
+      <div class="w-1/2 pr-2">
+        <label for="class" class="block font-semibold">Выберите параллель класса:</label>
+        <select id="class" class="w-full bg-white border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+        </select>
+      </div>
+      <div class="w-1/2 pl-2">
+        <label for="day" class="block font-semibold">Выберите день недели:</label>
+        <select id="day" class="w-full bg-white border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option value="1">Понедельник</option>
+          <option value="2">Вторник</option>
+          <option value="3">Среда</option>
+          <option value="4">Четверг</option>
+          <option value="5">Пятница</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto my-8 flex-grow">
+    <table class="w-full border border-gray-300" id="table_class">
+      <thead>
+        <tr class="bg-gray-200">
+          <th class="py-2 px-4 h-10">№</th>
+          <th class="py-2 px-4 h-10 head"></th>
+          <th class="py-2 px-4 h-10 head"></th>
+          <th class="py-2 px-4 h-10 head"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="py-2 px-4 border-b h-10">1<br>8:00-8:40</td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+        </tr>
+        <tr>
+          <td class="py-2 px-4 border-b h-10">2<br>8:50-9:30</td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+        </tr>
+        <tr>
+          <td class="py-2 px-4 border-b h-10">3<br>9:45-10:25</td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+        </tr>
+        <tr>
+          <td class="py-2 px-4 border-b h-10">4<br>10:35-11:15</td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+        </tr>
+        <tr>
+          <td class="py-2 px-4 border-b h-10">5<br>11:25-12:05</td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+        </tr>
+        <tr>
+          <td class="py-2 px-4 border-b h-10">6<br>12:15-12:55</td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+        </tr>
+        <tr>
+          <td class="py-2 px-4 border-b h-10">7<br>13:30-14:10</td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+        </tr>
+        <tr>
+          <td class="py-2 px-4 border-b h-10">8<br>14:25-15:05</td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+          <td class="py-2 px-4 border-b h-10 classes"></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4 px-6">
+    <p class="text-center">2024 Ковров</p>
+  </footer>
+
+  <script src="JS/main.js"></script>
+</body>
+
+</html>
